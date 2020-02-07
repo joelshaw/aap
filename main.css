@@ -72,7 +72,7 @@ body {
 
   .hero-section__right {
     float: right;
-    width: 486px;
+    width: 480px;
   }
 
   #hero-section h2 {
@@ -82,7 +82,7 @@ body {
   #hero-section h3 {
     font-size: 1.5em;
     font-weight: 300;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.5em 0;
     font-size: 2.25em;
   }
 
@@ -159,9 +159,6 @@ body {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 1024px) {
-  .desktop-only {
-    display: none;
-  }
 
   #header-top {
     display: flex;
@@ -205,24 +202,38 @@ body {
     background: url('./images/B&W_bg.jpg') 0 85%;
     background-size: cover;
     padding: 3em 0;
-    height: 390px;
+    height: 320px;
     color: #ffffff;
   }
 
   .hero-section__left {
-    display: flex;
-    justify-content: flex-start;
+    float: left;
     width: 50%;
-    line-height: 2;
   }
 
   .hero-section__right {
-    display: flex;
-    justify-content: flex-end;
+    float: right;
+    width: 400px;
+    margin-top: 152px;
+  }
+
+  .hero-section__right img {
+    width: inherit; 
   }
 
   #hero-section h2 {
-    font-size: 3em;
+    font-size: 4em;
+  }
+
+  #hero-section h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0 0 0.5em 0;
+    font-size: 2.25em;
+  }
+
+  #hero-section p {
+    line-height: 1.85;
   }
 
   #main-content {
