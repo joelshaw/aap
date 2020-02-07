@@ -150,6 +150,10 @@ body {
 }
 
 @media only screen and (min-width: 400px) and (max-width: 1024px) {
+  .desktop-only {
+    display: none;
+  }
+
   #header-top {
     display: flex;
     justify-content: center;
@@ -200,6 +204,7 @@ body {
     display: flex;
     justify-content: flex-start;
     width: 50%;
+    line-height: 2;
   }
 
   .hero-section__right {
@@ -278,6 +283,10 @@ body {
 }
 
 @media only screen and (max-width: 499px) {
+  .desktop-only {
+    display: none;
+  }
+
   #header-top {
     display: flex;
     justify-content: center;
@@ -316,11 +325,15 @@ body {
   #hero-section {
     display: flex;
     flex-direction: row;
-    background: url('./images/B&W_bg.jpg') 0 85%;
-    background-size: cover;
+    background: url(./images/B&W_bg.jpg) 73% 100%;
+    background-size: 2000px;
     padding: 3em 0;
     height: 390px;
     color: #ffffff;
+  }
+
+  #hero-section p {
+    margin: 2em 0 0;
   }
 
   .hero-section__left {
