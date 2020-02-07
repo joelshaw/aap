@@ -14,7 +14,7 @@ body {
 @media screen and (min-width: 1025px) {
   #header-top {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background: #cc0033;
     width: 100%;
@@ -25,12 +25,13 @@ body {
     display: flex;
     justify-items: flex-start;
     background: #303030;
+    margin: 0 1em;
     width: 180px;
     height: 50px;
   }
 
   #header-top .header-top__search {
-
+    margin: 0 auto;
   }
 
   #header-top .header-top__search input {
@@ -60,25 +61,33 @@ body {
     background: url('./images/B&W_bg.jpg') 0 85%;
     background-size: cover;
     padding: 3em 0;
-    height: 390px;
+    height: 320px;
     color: #ffffff;
   }
 
   .hero-section__left {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    float: left;
     width: 50%;
   }
 
   .hero-section__right {
-    display: flex;
-    justify-content: flex-end;
-    width: auto;
+    float: right;
+    width: 486px;
   }
 
   #hero-section h2 {
-    font-size: 3em;
+    font-size: 4em;
+  }
+
+  #hero-section h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0 0 1em 0;
+    font-size: 2.25em;
+  }
+
+  #hero-section p {
+    line-height: 1.85;
   }
 
   #main-content {
@@ -124,7 +133,7 @@ body {
   #footer {
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background: #272727;
     color: #ffffff;
